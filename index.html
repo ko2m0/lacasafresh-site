@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Casa Fresh | Coming Soon</title>
+    <meta
+      name="description"
+      content="La Casa Fresh is getting ready. Fresh produce, global connections. Coming soon."
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind custom theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fresh: "#006407",
+              ink: "#006407",
+              muted: "#FFC84A",
+              fog: "#f7f9f7",
+              crdbrd: "#C29C70",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+       .paper-bg {
+  background-color: #f1ecdf;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+    }
+    </style>
+  </head>
+
+  <body class="bg-crdbrd paper-bg text-ink min-h-screen flex items-center shadow-inner">
+    <main class="w-full px-6">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-12 gap-8 items-center backdrop-blur-sm "
+      >
+        <!-- LEFT: Logo -->
+        <div class="col-span-12 md:col-span-6 flex justify-center md:justify-start">
+          <!-- Replace this with your actual logo -->
+          <img src="/img/LaCasaFresh_Logo_B_Final.svg" alt="La Casa Fresh logo" style="transform: rotate(-3deg);">
+        </div>
+
+        <!-- RIGHT: Copy -->
+        <div class="col-span-12 md:col-span-6 text-center md:text-left">
+          <span
+            class="inline-block mb-4 px-4 py-1 rounded-full text-lg xl:text-3xl font-bold bg-fresh/40 text-muted"
+          >
+            Website in progress...
+          </span>
+
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold tracking-tight mb-4"
+          >
+            Fresh things are coming.
+          </h1>
+
+          <h3 class="text-fog text-xl lg:text-3xl xl:text-4xl font-semibold leading-relaxed max-w-lg mx-auto md:mx-0">
+            We’re building the next home for La Casa Fresh.
+            <br class="hidden sm:block" />
+            <br>
+            Fresh produce, global connections, no shortcuts.
+          </h3>
+
+          <p class="text-fresh text-xl font-semibold mt-8">
+            2026 © La Casa Fresh is a DBA of La Casa del Aguacate LLC
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
