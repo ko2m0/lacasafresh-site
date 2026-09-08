@@ -10,6 +10,30 @@
   body, table, td, div, p, span, a, h1, h2, h3 {
     font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
   }
+  /* Prevent iOS / Gmail mobile from auto-scaling images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    -ms-interpolation-mode: bicubic;
+  }
+  /* Lock logo size */
+  .logo-img {
+    width: 120px !important;
+    max-width: 120px !important;
+    height: 120px !important;
+  }
+  /* Lock social icon size */
+  .social-img {
+    width: 24px !important;
+    max-width: 24px !important;
+    height: 24px !important;
+  }
+  /* Lock banner size */
+  .banner-img {
+    width: 100% !important;
+    max-width: 600px !important;
+    height: auto !important;
+  }
 </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
@@ -23,8 +47,8 @@
       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
         <tr>
           <!-- Profile Photo -->
-          <td width="80" valign="top" style="padding-right: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
-            <img src="https://lacasafresh.netlify.app/LaCasaFresh_Logo_B_Final.png" alt="La Casa Fresh Logo" width="120" height="120" style="transform: rotate(-3deg); display: block; max-width: 120px; ">
+          <td width="120" valign="top" style="padding-right: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif; width: 120px; max-width: 120px;">
+            <img src="https://lacasafresh.netlify.app/LaCasaFresh_Logo_B_Final.png" alt="La Casa Fresh Logo" width="120" height="120" class="logo-img" style="transform: rotate(-3deg); display: block; max-width: 120px; width: 120px; height: 120px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
           </td>
           <!-- Name and Title -->
           <td valign="top" style="font-family: 'Poppins', Arial, Helvetica, sans-serif;">
@@ -49,29 +73,29 @@
                   <a href="https://wa.me/19255585243" style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #29653c; text-decoration: underline; font-weight: 600;">Let's Chat!</a>
                 </td>
               </tr>
-                <tr>
-    <td style="padding-bottom: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
-      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
-        <tr>
-          <td style="padding-right: 12px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
-            <a href="https://www.facebook.com/avosontime.us/" style="text-decoration: none;" target="_blank">
-              <img src="https://lacasafresh.netlify.app/fb_logo_4sgntr1.png" alt="Facebook" width="24" height="24" style="display: block;">
-            </a>
-          </td>
-          <td style="padding-right: 12px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
-            <a href="https://www.instagram.com/avosontime.us/" style="text-decoration: none;">
-              <img src="https://lacasafresh.netlify.app/ig_logo_4sgntr1.png" alt="Instagram" width="24" height="24" style="display: block;">
-            </a>
-          </td>
-          <td style="padding-right: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
-            <a href="https://www.linkedin.com/company/avosontime/" style="text-decoration: none;">
-              <img src="https://lacasafresh.netlify.app/lnkn_logo_4sgntr1.png" alt="LinkedIn" width="24" height="24" style="display: block;">
-            </a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+              <tr>
+                <td colspan="2" style="padding-bottom: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
+                  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
+                    <tr>
+                      <td style="padding-right: 12px; font-family: 'Poppins', Arial, Helvetica, sans-serif; width: 24px; max-width: 24px;">
+                        <a href="https://www.facebook.com/avosontime.us/" style="text-decoration: none;" target="_blank">
+                          <img src="https://lacasafresh.netlify.app/fb_logo_4sgntr1.png" alt="Facebook" width="24" height="24" class="social-img" style="display: block; width: 24px; max-width: 24px; height: 24px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
+                        </a>
+                      </td>
+                      <td style="padding-right: 12px; font-family: 'Poppins', Arial, Helvetica, sans-serif; width: 24px; max-width: 24px;">
+                        <a href="https://www.instagram.com/avosontime.us/" style="text-decoration: none;">
+                          <img src="https://lacasafresh.netlify.app/ig_logo_4sgntr1.png" alt="Instagram" width="24" height="24" class="social-img" style="display: block; width: 24px; max-width: 24px; height: 24px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
+                        </a>
+                      </td>
+                      <td style="padding-right: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif; width: 24px; max-width: 24px;">
+                        <a href="https://www.linkedin.com/company/avosontime/" style="text-decoration: none;">
+                          <img src="https://lacasafresh.netlify.app/lnkn_logo_4sgntr1.png" alt="LinkedIn" width="24" height="24" class="social-img" style="display: block; width: 24px; max-width: 24px; height: 24px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
             </table>
           </td>
         </tr>
@@ -79,14 +103,14 @@
     </td>
   </tr>
 
-    <!-- Promotional Banner -->
+  <!-- Promotional Banner -->
   <tr>
     <td style="padding-bottom: 20px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-radius: 8px; overflow: hidden; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
         <tr>
           <td style="font-family: 'Poppins', Arial, Helvetica, sans-serif;">
             <a href="#" style="text-decoration: none;">
-              <img src="https://lacasafresh.netlify.app/TPR_LeaderBoard1_f14signs_310826.png" alt="Visit our booth at this year's Global Produce and Floral Show" width="600" style="display: block; width: 100%; max-width: 600px; border-radius: 8px;">
+              <img src="https://lacasafresh.netlify.app/TPR_LeaderBoard1_f14signs_310826.png" alt="Visit our booth at this year's Global Produce and Floral Show" width="600" height="auto" class="banner-img" style="display: block; width: 100%; max-width: 600px; height: auto; border-radius: 8px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
             </a>
           </td>
         </tr>
